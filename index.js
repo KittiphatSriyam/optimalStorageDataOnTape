@@ -4,9 +4,9 @@ const optimalStorageDataOnTape = (...tape) => {
   for (let loop in tape) {
     que = [...que, ...tape.slice(0, Number(loop) + 1)];
   }
-  let time = que.reduce((total, num) => total + num, 0);
-  console.log("time->>", time);
-  return time;
+  let size = que.reduce((total, num) => total + num, 0);
+  console.log("size->>", size);
+  return size;
 };
 
 /*
